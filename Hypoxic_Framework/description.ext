@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------------------------------------------
+	DEFINES
+--------------------------------------------------------------------------------------------------*/
+#define TRUE 1
+#define FALSE 0
+
+#define MISSION_NAME "My Mission Name"
+#define MISSION_DESCRIPTION "My Mission Description"
+#define AUTHOR "Hypoxic"
+#define MISSION_IMG ""
+
+/*--------------------------------------------------------------------------------------------------
+	MISSION INFO
+--------------------------------------------------------------------------------------------------*/
+
+author = AUTHOR;
+onLoadName = MISSION_NAME;
+onLoadMission = MISSION_DESCRIPTION;
+loadScreen = MISSION_IMG;
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 12;
+};
+
+onLoadIntro = MISSION_DESCRIPTION;
+briefingName = MISSION_NAME;
+overviewPicture = MISSION_IMG;
+overviewTextLocked = MISSION_DESCRIPTION;
+
+/*--------------------------------------------------------------------------------------------------
+	RESPAWN SETTINGS
+--------------------------------------------------------------------------------------------------*/
+
+respawn = "BASE";
+respawnButton = TRUE;
+respawnDelay = 5;
+//respawnVehicleDelay = 12;
+respawnDialog = FALSE;
+respawnOnStart = 1;
+respawnTemplates[] = { "Wave", "MenuPosition" };
+
+/*--------------------------------------------------------------------------------------------------
+	Configs
+--------------------------------------------------------------------------------------------------*/
+#include "config\debriefing.hpp"
+#include "config\functions.hpp"
+#include "config\sounds.hpp"
+
+/*--------------------------------------------------------------------------------------------------
+	OTHER SETTINGS
+--------------------------------------------------------------------------------------------------*/
+
+allowProfileGlasses = FALSE;
+disabledAI = TRUE;
+enableDebugConsole = 1;  // 0 - Only Editor | 1 - SP/Hosts/Admins | 2 - Everyone
