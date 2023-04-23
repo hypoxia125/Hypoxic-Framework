@@ -8,7 +8,7 @@
 [] spawn {
 	scriptName "Switch Minigame - By Hypoxic";
 
-	waitUntil {time > 1};
+	waitUntil { getClientStateNumber >= 8 or getClientStateNumber == 0};
 
 	SMINI_fnc_generatePassword = {
 		if !(isServer) exitWith {};
@@ -98,6 +98,7 @@
 	};
 
 	SMINI_fnc_switch_password_correct = {
+		if (isNil "SMINI_password") exitWith { false };
 		private _states = SMINI_switches apply {
 			private _state = _x getVariable ["SMINI_switch_on", false];
 			parseNumber _state;
@@ -108,7 +109,7 @@
 	};
 
 	SMINI_switches = [];
-	for "_i" from 0 to 50 do {
+	for "_i" from 0 to 999 do {
 		private _name = format ["SMINI_switch_%1", _i];
 		private _var = missionNamespace getVariable [_name, objNull];
 		if (isNull _var) then {continue};
