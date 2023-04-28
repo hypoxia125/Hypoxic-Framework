@@ -21,13 +21,14 @@ params [
 ];
 
 if !(local _veh) exitWith { false };
-if (_itemArray isEqualTo []) exitWith { false };
 
 // Clear inventory
 clearItemCargoGlobal _veh;
 clearWeaponCargoGlobal _veh;
 clearMagazineCargoGlobal _veh;
 clearBackpackCargoGlobal _veh;
+
+if (_itemArray isEqualTo []) exitWith { false };
 
 _itemArray apply {
 	_x params ["_item", "_count"];
