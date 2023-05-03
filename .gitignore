@@ -1,0 +1,7 @@
+// Ignore File Extentions
+*.biprivatekey
+
+// Ignore HEMTT
+hemtt.exe
+.hemtt\
+.hemttout\

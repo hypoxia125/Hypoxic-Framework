@@ -18,12 +18,14 @@ onLoadName = MISSION_NAME;
 onLoadMission = MISSION_DESCRIPTION;
 loadScreen = MISSION_IMG;
 
+/*
 class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
 	maxPlayers = 12;
 };
+*/
 
 onLoadIntro = MISSION_DESCRIPTION;
 briefingName = MISSION_NAME;
