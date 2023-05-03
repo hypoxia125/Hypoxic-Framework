@@ -3,5 +3,6 @@
 
 // Ignore HEMTT
 hemtt.exe
-.hemtt\
-.hemttout\
+.hemtt/
+.hemttout/
+*.toml
