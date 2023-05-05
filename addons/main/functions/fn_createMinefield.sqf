@@ -48,13 +48,13 @@ for "_i" from 0 to _minesCountInArea - 1 do {
 };
 
 if (_draw) then {
-    private _markerName = format ["minefield_%1_icon", _pos];
+    private _markerName = format ["minefield_%1_area", getPosASL _triggerArea];
     private _markerArea = [_markerName, _triggerArea, true] call BIS_fnc_markerToTrigger;
     _markerArea setMarkerColorLocal "ColorRED";
     _markerArea setMarkerBrush "FDiagonal";
 
-    private _markerName = format ["minefield_%1_icon", _pos];
-    private _marker = createMarkerLocal [_markerName, _pos];
+    private _markerName = format ["minefield_%1_icon", getPosASL _triggerArea];
+    private _marker = createMarkerLocal [_markerName, getPosASL _triggerArea];
     _marker setMarkerShape "ICON";
     _marker setMarkerType "hd_warning";
     _marker setMarkerColor "ColorRED";

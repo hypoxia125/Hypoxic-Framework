@@ -1,9 +1,25 @@
+/*--------------------------------------------------------------------------------------------------
+	Add Scopes to Arsenal
+
+	GLOBAL ARGUMENT - LOCAL OR GLOBAL EXECUTION
+
+	Usage: Adds scopes to the arsenal whitelist of a ACE Arsenal Box depending on parameters
+
+	Parameters:
+		0.) ACE Arsenal Box - Object
+		1.) Max Scope Magnification - Number
+		2.) Include NVG - Bool (Default: True)
+		3.) Global - Bool (Default: False)
+--------------------------------------------------------------------------------------------------*/
+
 params [
 	["_box", objNull, [objNull]],
 	["_maxMag", 999, [-1]],
 	["_nvg", true, [true]],
 	["_global", false, [true]]
 ];
+
+_maxMag = abs _maxMag;
 
 // get scopes
 private _scopes = toString {

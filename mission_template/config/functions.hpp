@@ -8,11 +8,14 @@ class CfgFunctions
 
 			// Arsenal Related
 			class addACEItemstoArsenal {};
+			class addScopesToArsenal {};
 			class getScopeMag {};
+			class getWeaponLinkedItems {};
 			class hasScopeNVG {};
 
-			/// Unit Related
+			// Unit Related
 			class clearGroupWaypoints {};
+			class getAlivePlayers {};
 			class moveOnCombat {};
 
 			// Vehicle Related
