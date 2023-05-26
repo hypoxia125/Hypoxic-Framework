@@ -31,6 +31,8 @@ class CfgFunctions
 			
 			// Eden Related
 			class buildGrassCutters {};
+			class create3DENMarkers {};
+			class get3DENMarkerParams {};
 
 			// Conditional Related
 			class getTimeDateAhead {};
