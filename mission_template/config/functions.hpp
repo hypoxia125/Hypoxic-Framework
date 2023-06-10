@@ -15,7 +15,7 @@ class CfgFunctions
 
 			// Unit Related
 			class clearGroupWaypoints {};
-			class getAlivePlayers {};
+			class getPlayers {};
 			class moveOnCombat {};
 
 			// Vehicle Related

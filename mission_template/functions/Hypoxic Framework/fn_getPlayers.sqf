@@ -9,6 +9,14 @@
 	Return:
 		Alive Players - Array of Players
 --------------------------------------------------------------------------------------------------*/
+params [
+	["_aliveOnly", false, [true]]
+];
 
-private _players = allPlayers - entities "HeadlessClient_F";
-_players select { alive _x };
+private _players = (allUnits + allDead) select {isPlayer _x};
+if (_aliveOnly) then {
+	_players = _players select {alive _x};
+};
+
+// return
+_players;
