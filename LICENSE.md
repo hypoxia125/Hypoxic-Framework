@@ -1,4 +1,5 @@
-Copyright (c) {YEAR} {AUTHOR}
+ARMA PUBLIC LICENSE
+https://www.bistudio.com/community/licenses/arma-public-license
 
 Brief summary of this Licence
 
@@ -11,8 +12,6 @@ With this licence you are free to adapt (i.e. modify, rework or update) and shar
     Arma Only - You may not convert or adapt this material to be used in other games than Arma.
 
 By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Arma Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
-
-Full version of licence
 
 Section 1 - Definitions
 
@@ -75,7 +74,6 @@ Where the Licensed Rights include Sui Generis Database Rights that apply to Your
     if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
     You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
 
-For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
 Section 5 – Disclaimer of Warranties and Limitation of Liability
 
     Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
