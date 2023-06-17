@@ -17,6 +17,7 @@ class CfgFunctions
 			class clearGroupWaypoints {};
 			class getPlayers {};
 			class moveOnCombat {};
+			class rebalanceAISkill {};
 
 			// Vehicle Related
 			class initVehInventory {};
