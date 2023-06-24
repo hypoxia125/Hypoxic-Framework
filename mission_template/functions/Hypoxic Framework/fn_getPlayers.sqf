@@ -10,13 +10,12 @@
 		Alive Players - Array of Players
 --------------------------------------------------------------------------------------------------*/
 params [
-	["_aliveOnly", false, [true]]
+	["_includeDead", true, [true]]
 ];
 
-private _players = (allUnits + allDead) select {isPlayer _x};
-if (_aliveOnly) then {
-	_players = _players select {alive _x};
-};
+private _players = allUnits select {isPlayer _x};
+private _dead = allDead select {isPlayer _x};
 
-// return
-_players;
+if !(_includeDead) exitWith { _players };
+
+_players + _dead
