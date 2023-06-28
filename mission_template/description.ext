@@ -47,9 +47,9 @@ respawnTemplates[] = { "Wave", "MenuPosition" };
 /*--------------------------------------------------------------------------------------------------
 	Configs
 --------------------------------------------------------------------------------------------------*/
-#include "config\debriefing.hpp"
-#include "config\functions.hpp"
-#include "config\sounds.hpp"
+#include "config\CfgDebriefing.hpp"
+#include "config\CfgFunctions.hpp"
+#include "config\CfgSounds.hpp"
 
 /*--------------------------------------------------------------------------------------------------
 	OTHER SETTINGS
